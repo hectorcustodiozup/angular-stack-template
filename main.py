@@ -12,6 +12,7 @@ class RestTemplate(Template):
             return metadata
 
         def post_hook(self,metadata:Metadata):
+            subprocess.run('sudo rm .gitignore', shell=True, cwd=str(metadata.target_path)+"/beagle-app-angular")
             subprocess.run('sudo npx -p @angular/cli@12.x ng new beagle-angular-app --directory ./beagle-app-angular', shell=True, cwd=metadata.target_path)
             subprocess.run('sudo npm install @zup-it/beagle-angular --save', shell=True, cwd=str(metadata.target_path)+"/beagle-app-angular")
             subprocess.run('sudo npx beagle init', shell=True, cwd=str(metadata.target_path)+"/beagle-app-angular")
