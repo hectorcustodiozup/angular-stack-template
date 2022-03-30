@@ -1,9 +1,9 @@
 name: angular-stack-template
-description: Describe your template explaining its purposeBeagle Angular Stack Template
+description: Beagle Angular Stack Template
 types:
   - app-template
 inputs:
-  - label: Project name
+  - label: Nome do Projecto Beagle Angular
     type: text
     name: project_name
-    default: project-name
+    default: beagle-angular-project
