@@ -1,6 +1,10 @@
 
-## Jinja
+## What does this project do?
 
-You can use jinja to make a template-data folder more dynamic.
+ - This project is a prove of concept for stackspot template creation. It uses angular cli to create and app and adds beagle dependency to it.
 
-complete documentation of jinja: https://jinja.palletsprojects.com/en/3.0.x/templates/
+ - The template also initializes Beagle angular and shoud leave the project ready to be used.
+
+ ## How to run it
+
+- [See stackspot documentation on how to add and run templates from your stack](https://docs.stackspot.com/v3.2.0/docs/creators-guide/)
